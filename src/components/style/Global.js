@@ -10,7 +10,6 @@ const GlobalStyles = createGlobalStyle`
         padding: 0; 
     }
     html {
-        font-size: 62.5%;
         box-sizing: border-box;
         scroll-behavior: smooth;
     }
@@ -27,6 +26,8 @@ const GlobalStyles = createGlobalStyle`
     body {
         min-height: 100vh;
         text-rendering: optimizeSpeed;
+        font-size: 1.125rem ;
+        font-family: ${({theme}) => theme.font.rubik};
     }
 
     / * Make images easier to work with */
@@ -49,6 +50,11 @@ const GlobalStyles = createGlobalStyle`
     textarea,
     select {
         font: inherit;
+    }
+
+    button{
+        border: none;
+        background: none;
     }
 
     /* Remove all animations and transitions for people that prefer not to see them */

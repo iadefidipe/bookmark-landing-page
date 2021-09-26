@@ -1,8 +1,9 @@
 import Hamburger from "../app/images/icon-hamburger.svg"
+import { HamburgerStyle } from "./style/Hamburger.style"
 
 const BtnHamburger = () => {
     return (
-        <img src={Hamburger} alt="" />
+        <HamburgerStyle src={Hamburger} alt="" />
     )
 }
 

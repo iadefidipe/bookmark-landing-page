@@ -1,5 +1,5 @@
-import facebook from "../../assets/images/icon-facebook.svg";
-import twitter from "../../assets/images/icon-twitter.svg";
+import facebook from "../app/images/icon-facebook.svg";
+import twitter from "../app/images/icon-twitter.svg";
 
 export const menuData = [
   {

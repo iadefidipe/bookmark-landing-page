@@ -4,17 +4,28 @@ export const StyledHeader = styled.header`
     display:flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 
 `
 
-export const Logo = styled.img`
 
-`
 
 export const Nav  = styled.nav`
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+
 
 `
 export const NavMenu  = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @media (max-width: ${ ({theme}) => theme.queries.deskMini}){
+        display:none;
+    }
 
 `
 
