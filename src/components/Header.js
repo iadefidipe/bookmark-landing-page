@@ -18,7 +18,7 @@ const Header = ({theme}) => {
                    <BtnHamburger />
                    <NavMenu>
 
-                   {menuData.map( (data) => ( <p> {data.title} </p> ))}
+                   {menuData.map( (data) => ( <p key={data.id}> {data.title} </p> ))}
 
                    <Button bgcolor={theme.colors.pryRed} color={theme.colors.white}>LOGIN</Button>
 
