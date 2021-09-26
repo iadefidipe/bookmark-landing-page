@@ -26,8 +26,20 @@ const GlobalStyles = createGlobalStyle`
     body {
         min-height: 100vh;
         text-rendering: optimizeSpeed;
-        font-size: 1.125rem ;
         font-family: ${({theme}) => theme.font.rubik};
+    }
+
+    p{
+        color: ${ ({theme}) => theme.colors.neuBlue };
+        font-size: 1.125rem ;
+        line-height: 28px;
+    }
+    h1{
+        color: ${({theme}) => theme.colors.neuDarkBlue};
+        line-height: 52px;
+        letter-spacing: -0.15px;
+        font-size: 3rem;
+
     }
 
     / * Make images easier to work with */

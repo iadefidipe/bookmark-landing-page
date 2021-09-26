@@ -12,7 +12,7 @@ const Header = ({theme}) => {
     return (
        <Container>
 
-           {/* <StyledHeader>
+           <StyledHeader>
                <Logo src={theme.logo.header} />
 
                <Nav>
@@ -24,7 +24,7 @@ const Header = ({theme}) => {
                    
                </Nav>
 
-           </StyledHeader> */}
+           </StyledHeader>
 
            {/* <MobileMenu /> */}
 
