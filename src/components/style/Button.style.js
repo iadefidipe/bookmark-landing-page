@@ -12,7 +12,7 @@ export const Button = styled.button`
 
     &:hover{
         background-color: ${({color,theme}) => color };
-        border: 1px solid ${({bgcolor,theme}) => bgcolor} ;
+        border: 2px solid ${({bgcolor,theme}) => bgcolor} ;
         color: ${({bgcolor,theme}) => bgcolor};
     }
 
