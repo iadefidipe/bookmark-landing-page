@@ -16,7 +16,7 @@ function App() {
         <GlobalStyles />
         <Header theme={theme} />
         <Hero theme = {theme}/>
-        <Cta />
+        <Cta theme={theme} />
         <Footer theme = {theme} />
 
       </>
