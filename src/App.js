@@ -15,7 +15,7 @@ function App() {
         <GlobalStyles />
         <Header theme={theme} />
         <Hero theme = {theme}/>
-        <Footer />
+        <Footer theme = {theme} />
 
       </>
 

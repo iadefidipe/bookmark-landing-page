@@ -14,10 +14,7 @@ const GlobalStyles = createGlobalStyle`
         scroll-behavior: smooth;
     }
 
-    p{
-        
-        line-height: 1.5;
-    }
+    
 
     img{
         max-width: 100%;
@@ -33,12 +30,26 @@ const GlobalStyles = createGlobalStyle`
         color: ${ ({theme}) => theme.colors.neuBlue };
         font-size: 1.125rem ;
         line-height: 28px;
+
+        @media (max-width: ${ ({theme}) => theme.queries.mobile}){
+            font-size: 0.9375rem;
+            line-height: 25px;
+
+        }
+
+
     }
     h1{
         color: ${({theme}) => theme.colors.neuDarkBlue};
         line-height: 52px;
         letter-spacing: -0.15px;
         font-size: 3rem;
+
+        @media (max-width: ${ ({theme}) => theme.queries.mobile}){
+            font-size: 1.875rem;
+            letter-spacing: -0.09px;
+                line-height: 40px;
+        }
 
     }
 

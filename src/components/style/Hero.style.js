@@ -37,7 +37,9 @@ export const StyledHero = styled.section`
 
 }
 @media (max-width: ${ ({theme}) => theme.queries.mobileMini}){
-    background-size: 230px ;
+    background-size: 200px  ;
+
+
 
 }
 
