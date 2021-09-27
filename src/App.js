@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import GlobalStyles from './components/style/Global';
 import theme from './data/theme';
+import Cta from './components/Cta';
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <GlobalStyles />
         <Header theme={theme} />
         <Hero theme = {theme}/>
+        <Cta />
         <Footer theme = {theme} />
 
       </>

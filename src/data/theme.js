@@ -78,6 +78,12 @@ const theme ={
       btnFirefox: 'Get it on Firefox',
       illustration: hero
 
+    },
+    ctaData:{
+      title: 'Stay up-to-date with what we’re doing',
+      text: '35,000+ ALREADY JOINED',
+      btnText: 'Contact Us',
+      placeholder: 'Enter your email address'
     }
   }
 
