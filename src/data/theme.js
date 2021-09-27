@@ -37,8 +37,11 @@ const theme ={
     },
     queries:{
       mobile: `${576/16}rem`,
+      mobileMini: `${375/16}rem`,
       tablet: `${786/16}rem`,
-      deskMini: `${976/16}rem`
+      deskMini: `${976/16}rem`,
+      deskMid: `${1129/16}rem`
+
     },
     button:{
       padding:'0.625rem 1.5rem',
