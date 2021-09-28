@@ -6,6 +6,9 @@ export const CardStyle = styled.div`
     height: 23.1875rem;
     text-align: center;
     box-shadow: ${ ({theme}) => theme.downloadData.cardShadow };
+    background: url( ${ ({theme}) => theme.bgDot } ) no-repeat center 280px;
+    margin-top: ${ ({margin}) => margin } ;
+    
 
     &>img{
         margin: 49px 89px 32px  ;
@@ -19,8 +22,8 @@ export const CardStyle = styled.div`
     &>p{
         font-size: 0.9375rem;
         padding:  6px 0 60px;
-
     }
+
 
     
 `

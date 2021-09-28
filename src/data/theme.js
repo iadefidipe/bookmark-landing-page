@@ -17,6 +17,7 @@ import feature3 from "../app/images/illustration-features-tab-3.svg"
 import hero from "../app/images/illustration-hero.svg"
 import rectangleLeft from "../app/images/rectangleLeft.svg"
 import rectangleRight from "../app/images/rectangleRight.svg"
+import bgDot from "../app/images/bg-dots.svg"
 
 
 const theme ={
@@ -50,6 +51,7 @@ const theme ={
     },
     btnNav: 'LOGIN',
     rectangleLeft: rectangleLeft,rectangleRight: rectangleRight,
+    bgDot:bgDot,
     logo:{
         header:logo,
         drop:logoDrop,
@@ -95,6 +97,7 @@ const theme ={
           description: "Minimum version 62",
           link: "/",
           buttonText: "Add & Install Extension",
+          margin: '0px'
         },
         {
           id: 2,
@@ -104,6 +107,8 @@ const theme ={
           description: "Minimum version 55",
           link: "/",
           buttonText: "Add & Install Extension",
+          margin: '60px'
+
         },
         {
           id: 3,
@@ -113,6 +118,8 @@ const theme ={
           description: "Minimum version 646",
           link: "/",
           buttonText: "Add & Install Extension",
+          margin: '120px'
+
         },
       ]
 
