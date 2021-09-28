@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import GlobalStyles from './components/style/Global';
 import theme from './data/theme';
 import Cta from './components/Cta';
+import Download from './components/Download';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <GlobalStyles />
         <Header theme={theme} />
         <Hero theme = {theme}/>
+        <Download theme = {theme} />
         <Cta theme={theme} />
         <Footer theme = {theme} />
 

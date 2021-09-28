@@ -53,10 +53,7 @@ const theme ={
     logo:{
         header:logo,
         drop:logoDrop,
-        footer:logoFooter,
-        chrome:chrome,
-        firefox:firefox,
-        opera:opera
+        footer:logoFooter
     },
     icon:{
       arrow: arrow,
@@ -84,6 +81,40 @@ const theme ={
       text: '35,000+ ALREADY JOINED',
       btnText: 'Contact Us',
       placeholder: 'Enter your email address'
+    },
+    downloadData:{
+      title: 'Download the extension',
+      subtitle: 'We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.',
+      cardData: [
+        {
+          id: 1,
+          image: chrome,
+          imageAlt: "chrome logo",
+          title: "Add to Chrome",
+          description: "Minimum version 62",
+          link: "/",
+          buttonText: "Add & Install Extension",
+        },
+        {
+          id: 2,
+          image: firefox,
+          imageAlt: "firefox logo",
+          title: "Add to Firefox",
+          description: "Minimum version 55",
+          link: "/",
+          buttonText: "Add & Install Extension",
+        },
+        {
+          id: 3,
+          image: opera,
+          imageAlt: "opera logo",
+          title: "Add to Opera",
+          description: "Minimum version 646",
+          link: "/",
+          buttonText: "Add & Install Extension",
+        },
+      ]
+
     }
   }
 
