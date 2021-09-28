@@ -85,6 +85,7 @@ const theme ={
     downloadData:{
       title: 'Download the extension',
       subtitle: 'We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.',
+      cardShadow:'0 10px 20px -5px #4a5ecf20',
       cardData: [
         {
           id: 1,
