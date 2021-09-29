@@ -75,11 +75,6 @@ const theme ={
       close:close,
       error:error
     },
-    illustrations:{
-      feature1: feature1,
-      feature2: feature2,
-      feature3: feature3,
-    },
     heroData:{
       title: 'A Simple Bookmark Manager',
       text: 'A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.',
@@ -165,6 +160,41 @@ const theme ={
         },
       ],
       
+    },
+    featureData : {
+      title: "Features",
+      subtitle:
+        "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.",
+      featureTitles: ["Simple Bookmarking", "Speedy Searching", "Easy Sharing"],
+      featureContent: [
+        {
+          image: feature1,
+          imageAlt: "an illustration of an item being clicked on a smart device",
+          title: "Bookmark in one click",
+          description:
+            "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
+          btnText: "More Info",
+          bntLink: "/",
+        },
+        {
+          image: feature2,
+          imageAlt: "an illustration depicting a search action on a smart device",
+          title: "Share your bookmarks",
+          description:
+            "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
+          btnText: "More Info",
+          bntLink: "/",
+        },
+        {
+          image: feature3,
+          imageAlt: "an illustration showing people sharing items online",
+          title: "Bookmark in one click",
+          description:
+            "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
+          btnText: "More Info",
+          bntLink: "/",
+        },
+      ],
     }
   }
 

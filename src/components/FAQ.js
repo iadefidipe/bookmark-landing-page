@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import SectionIntro from './SectionIntro'
-import { FAQContainer, FAQuestion, StyledFAQ, MainContainer } from './style/FAQ.style'
+import { Button } from './style/Button.style'
+import { FAQContainer, FAQuestion, StyledFAQ, MainContainer, ButtonContainer } from './style/FAQ.style'
 
 
 const FAQ = ({theme}) => {
@@ -29,7 +30,13 @@ const FAQ = ({theme}) => {
                         { toggleFaq ===index && <p>{faq.answer}</p>}
                     </FAQContainer>
                 ) )}
+
+                
             </MainContainer>
+            <ButtonContainer>
+                <Button bgcolor={theme.colors.pryBlue} color={theme.colors.white}> {theme.faqData.faqButton.text} </Button>
+            </ButtonContainer>
+            
 
         </StyledFAQ>
     )

@@ -7,6 +7,7 @@ import theme from './data/theme';
 import Cta from './components/Cta';
 import Download from './components/Download';
 import FAQ from './components/FAQ';
+import Features from './components/Features';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <GlobalStyles />
         <Header theme={theme} />
         <Hero theme = {theme}/>
+        <Features theme={theme} />
         <Download theme = {theme} />
         <FAQ theme ={theme}/>
         <Cta theme={theme} />

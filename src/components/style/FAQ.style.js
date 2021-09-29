@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledFAQ = styled.section`
     padding: 100px 0;
+
 `
 export const FAQContainer = styled.div`
 margin: 0 auto;
@@ -51,7 +52,11 @@ padding: 10px 0;
 `
 
 export const MainContainer = styled.div`
-    
-        margin-top: 50px;
-    
+    margin-top: 50px; 
+`
+
+export const ButtonContainer = styled.div`
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
 `
