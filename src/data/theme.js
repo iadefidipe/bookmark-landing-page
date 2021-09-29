@@ -18,6 +18,9 @@ import hero from "../app/images/illustration-hero.svg"
 import rectangleLeft from "../app/images/rectangleLeft.svg"
 import rectangleRight from "../app/images/rectangleRight.svg"
 import bgDot from "../app/images/bg-dots.svg"
+import open from "../app/images/icon-hamburger.svg"
+
+
 
 
 const theme ={
@@ -27,7 +30,8 @@ const theme ={
       neuBlue:'hsl(229, 8%, 60%)',
       neuDarkBlue: 'hsl(229, 31%, 21%)',
       neuWhite: 'hsl(0, 0%, 97%)',
-      white: '#fff'
+      white: '#fff',
+      bgDrop: 'rgba(37, 43, 70, 0.953)'
     },
     font:{
       rubik:`'Rubik', sans-serif`
@@ -48,6 +52,10 @@ const theme ={
       padding:'0.625rem 1.5rem',
       radius:'0.3125rem',
       shadow:'0 8px 8px -4px #4a5ecf20'
+    },
+    hamburger:{
+      open: open,
+      close: close
     },
     btnNav: 'LOGIN',
     rectangleLeft: rectangleLeft,rectangleRight: rectangleRight,
@@ -123,6 +131,38 @@ const theme ={
         },
       ]
 
+    },
+    faqData:{
+      title: "Frequently Asked Questions",
+      subtitle:
+        "Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.",
+      faqButton: {
+        text:"More Info",
+        link: "/"
+      },
+      faqs: [
+        {
+          question: "What is Bookmark?",
+          answer:
+            "Bookmark is the best bookmarking app on the market that boosts of a clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. ",
+        },
+        {
+          question: "How can I request a new browser?",
+          answer:
+            "You can request a new browser through our dedicated App store. Visit our store of Google Play or Apple Store. Contact our support team if you encounter any troubles installing the application on your device.",
+        },
+        {
+          question: "Is there a mobile app?",
+          answer:
+            "Yes! We recently launched a mobile app version for android and iOS. You can proceed to your respective App stores to download Bookmark.",
+        },
+        {
+          question: "What about other Chromium browsers?",
+          answer:
+            "Chromium browsers are currently in development and scheduled to be released in due time. Our developers are working round the clock to push the final app into production.",
+        },
+      ],
+      
     }
   }
 

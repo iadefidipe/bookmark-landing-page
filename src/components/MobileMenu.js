@@ -1,10 +1,33 @@
-import { Dropdown } from "./style/Dropdown.style"
+import { Dropdown,Flex, Option,Social} from "./style/Dropdown.style"
+import Menu from "./Menu"
+import SocialIcons from "./SocialIcons"
+import { Logo } from "./style/Logo.style"
+import BtnHamburger from "./BtnHamburger"
 
-const MobileMenu = () => {
+import { Button } from "./style/Button.style"
+
+const MobileMenu = ({theme, toggle}) => {
     return (
         
         <Dropdown>
+
+            <Flex>
+
+                <Logo src={theme.logo.drop} />
+                <BtnHamburger hamburger={theme.hamburger.close} toggle={toggle} />
+
+            </Flex>
+        
             
+            <Option>
+                <Menu column={true} border={true} />
+                
+                <Button mobile={true} color={theme.colors.white}>{theme.btnNav}</Button>
+            </Option>
+
+            <Social>
+                <SocialIcons />
+            </Social>
         </Dropdown>
     )
 }

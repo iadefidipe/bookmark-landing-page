@@ -1,9 +1,9 @@
-import Hamburger from "../app/images/icon-hamburger.svg"
+// import Hamburger from "../app/images/icon-hamburger.svg"
 import { HamburgerStyle } from "./style/Hamburger.style"
 
-const BtnHamburger = () => {
+const BtnHamburger = ({hamburger,toggle}) => {
     return (
-        <HamburgerStyle src={Hamburger} alt="" />
+        <HamburgerStyle src={hamburger} onClick={toggle} alt="" />
     )
 }
 

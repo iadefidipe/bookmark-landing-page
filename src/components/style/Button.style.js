@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const Button = styled.button`
     padding: ${({theme}) => theme.button.padding };
     border-radius: ${({theme}) => theme.button.radius};
-    border: 2px solid transparent ;
+    border:  ${({mobile}) =>  `2px solid ${ mobile ? 'white':'transparent' }` } ;
     box-shadow: ${({theme}) => theme.button.shadow };
-    background-color: ${({bgcolor,theme}) => bgcolor || theme.colors.neuWhite};
+    background-color: ${({mobile, bgcolor,theme}) => mobile ? 'transparent' : bgcolor || theme.colors.neuWhite};
     font-size: 0.875rem;
     font-weight: ${({theme}) => theme.weight.medium};
     color: ${({color,theme}) => color || theme.colors.neuDarkBlue};
