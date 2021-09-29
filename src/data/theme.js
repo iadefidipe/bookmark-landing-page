@@ -19,6 +19,7 @@ import rectangleLeft from "../app/images/rectangleLeft.svg"
 import rectangleRight from "../app/images/rectangleRight.svg"
 import bgDot from "../app/images/bg-dots.svg"
 import open from "../app/images/icon-hamburger.svg"
+import arrowUp from "../app/images/icon-arrow-up.svg"
 
 
 
@@ -67,6 +68,7 @@ const theme ={
     },
     icon:{
       arrow: arrow,
+      arrowUp:arrowUp,
       facebook:facebook,
       twitter:twitter,
       hamburger: hamburger,

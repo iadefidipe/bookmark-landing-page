@@ -4,6 +4,7 @@ export const Dropdown = styled.div`
 position: absolute;
 left: 0;
 right: 0;
+bottom: 0;
 
     background: ${ ({theme}) => theme.colors.bgDrop};
     padding: 20px;

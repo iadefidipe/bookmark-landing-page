@@ -1,15 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SectionIntro from './SectionIntro'
-import { StyledFAQ } from './style/FAQ.style'
+import { FAQContainer, FAQuestion, StyledFAQ, MainContainer } from './style/FAQ.style'
+
 
 const FAQ = ({theme}) => {
+    const [toggleFaq, setToggleFaq] = useState(false)
+
+    const handleToggle = (index) => {
+        if (toggleFaq === index) {
+          return setToggleFaq(null);
+        }
+        setToggleFaq(index);
+      };
+
     return (
         <StyledFAQ>
 
             <SectionIntro header={theme.faqData.title} text = {theme.faqData.subtitle} />
+
+            <MainContainer>
+                {theme.faqData.faqs.map( (faq,index) => (
+                    <FAQContainer key={index}>
+                        <FAQuestion>
+                            <h4>{faq.question}</h4>
+                            <img src={toggleFaq ===index ? theme.icon.arrowUp : theme.icon.arrow } alt="" onClick={ () => handleToggle(index)} />
+                        </FAQuestion>
+                
+                        { toggleFaq ===index && <p>{faq.answer}</p>}
+                    </FAQContainer>
+                ) )}
+            </MainContainer>
 
         </StyledFAQ>
     )
 }
 
 export default FAQ
+
+
+
