@@ -21,10 +21,10 @@ const FAQ = ({theme}) => {
 
             <MainContainer>
                 {theme.faqData.faqs.map( (faq,index) => (
-                    <FAQContainer key={index}>
+                    <FAQContainer key={index} onClick={ () => handleToggle(index)} >
                         <FAQuestion>
                             <h4>{faq.question}</h4>
-                            <img src={toggleFaq ===index ? theme.icon.arrowUp : theme.icon.arrow } alt="" onClick={ () => handleToggle(index)} />
+                            <img src={toggleFaq ===index ? theme.icon.arrowUp : theme.icon.arrow } alt=""  />
                         </FAQuestion>
                 
                         { toggleFaq ===index && <p>{faq.answer}</p>}

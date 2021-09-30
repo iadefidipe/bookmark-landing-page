@@ -39,7 +39,8 @@ const theme ={
     },
     weight:{
       regular: '400',
-      medium:'600'
+      medium:'600',
+      mid: '500'
     },
     queries:{
       mobile: `${576/16}rem`,

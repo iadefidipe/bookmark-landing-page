@@ -10,12 +10,21 @@ export const TabHeaders = styled.div`
     justify-content: center;
     cursor: pointer;
 
+    @media (max-width: ${ ({theme}) => theme.queries.tablet}){
+        flex-direction:column ;
+        padding: 0 20px;
+      
+      
+
+    }
 `
 
 export const TabText = styled.p`
     padding: 20px 50px ;
     border-bottom: 1px solid ${ ({theme}) => theme.colors.neuBlue};
     position: relative;
+    color: ${ ({clicked, index, theme}) => clicked === index ? theme.colors.neuDarkBlue : theme.colors.neuBlue };
+    font-weight: ${ ({theme}) => theme.weight.mid } ;
 
     &::after{
         content: '';
@@ -35,6 +44,13 @@ export const TabText = styled.p`
             opacity: 1;
         }
     }
+
+    @media (max-width: ${ ({theme}) => theme.queries.tablet}){
+        width: 100%;
+        text-align: center;
+    }
+
+    
 
 
     

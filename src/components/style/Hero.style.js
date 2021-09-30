@@ -44,10 +44,10 @@ export const StyledHero = styled.section`
 
 }
 @media (max-width: ${ ({theme}) => theme.queries.mobile}){
-    background-size: ${ ({feature}) => feature ? '100%' : '350px'}  ;
+    background-size: 350px ;
     
 
-    background-position:  ${ ({feature}) => feature ? 'left bottom' : 'right 90px'} ;
+    background-position:  ${ ({feature}) => feature ? 'left 500px' : 'right 90px'} ;
 
 }
 @media (max-width: ${ ({theme}) => theme.queries.mobileMini}){
