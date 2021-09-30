@@ -165,8 +165,8 @@ const theme ={
       title: "Features",
       subtitle:
         "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.",
-      featureTitles: ["Simple Bookmarking", "Speedy Searching", "Easy Sharing"],
-      featureContent: [
+      headers: ["Simple Bookmarking", "Speedy Searching", "Easy Sharing"],
+        content: [
         {
           image: feature1,
           imageAlt: "an illustration of an item being clicked on a smart device",

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from './style/Button.style'
-import { Container } from './style/container.style'
 import { HeroCta, HeroImage, HeroLeft, HeroRight, StyledHero } from './style/Hero.style'
 
 const Hero = ({theme}) => {

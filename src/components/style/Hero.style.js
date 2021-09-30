@@ -2,14 +2,28 @@ import styled from "styled-components";
 
 
 export const StyledHero = styled.section`
-    display: flex;
+    display: ${ ({feature,clicked,index}) => {
+        if (feature){
+            if(clicked === index){
+                return 'flex'
+
+            }
+            else{
+                return 'none'
+            }
+        }
+        else{
+            return 'flex'
+        }
+    }};
     justify-content: space-between;
     gap:65px;
     padding: 50px 30px 100px 100px;
     align-items: center;
-    background: url(${ ({theme}) => theme.rectangleRight });
+    background: url(${ ({feature,theme}) => feature ? theme.rectangleLeft : theme.rectangleRight });
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position:  ${ ({feature}) => feature ? 'left bottom' : 'right bottom' } ;
+
 
     &>*{
         flex: 1;
@@ -18,7 +32,7 @@ export const StyledHero = styled.section`
     
 @media (max-width: ${ ({theme}) => theme.queries.deskMid}){
     flex-direction: column-reverse;
-    background-position: right 170px;
+    background-position: ${ ({feature}) => feature ? 'left bottom' : 'right 170px'} ;
     text-align:center;
 
 
@@ -26,14 +40,14 @@ export const StyledHero = styled.section`
 @media (max-width: ${ ({theme}) => theme.queries.tablet}){
     background-size: auto;
     padding: 50px 32px 100px;
-    background-position: right 110px;
+    background-position: ${ ({feature}) => feature ? 'left bottom' : 'right 110px'} ;
 
 }
 @media (max-width: ${ ({theme}) => theme.queries.mobile}){
-    background-size: 350px  ;
+    background-size: ${ ({feature}) => feature ? '100%' : '350px'}  ;
     
 
-    background-position: right 90px;
+    background-position:  ${ ({feature}) => feature ? 'left bottom' : 'right 90px'} ;
 
 }
 @media (max-width: ${ ({theme}) => theme.queries.mobileMini}){
