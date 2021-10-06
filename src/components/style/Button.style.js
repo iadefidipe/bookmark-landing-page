@@ -12,10 +12,13 @@ export const Button = styled.button`
     font-weight: ${({theme}) => theme.weight.medium};
     color: ${({color,theme}) => color || theme.colors.neuDarkBlue};
     transition: all 300ms ease-in-out;
+    text-align:center;
     &:hover{
         background-color: ${({color,theme}) => color || theme.colors.white };
         border: 2px solid ${({bgcolor,theme}) => bgcolor  || theme.colors.neuDarkBlue} ;
         color: ${({bgcolor,theme}) => bgcolor  || theme.colors.neuDarkBlue};
     }
+
+  
 
 `

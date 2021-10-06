@@ -13,6 +13,7 @@ export const TabHeaders = styled.div`
     @media (max-width: ${ ({theme}) => theme.queries.tablet}){
         flex-direction:column ;
         padding: 0 20px;
+        
     }
 `
 

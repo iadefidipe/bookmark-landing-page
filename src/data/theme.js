@@ -43,8 +43,11 @@ const theme ={
       mid: '500'
     },
     queries:{
-      mobile: `${576/16}rem`,
+      mobileMin: `${340/16}rem`,
       mobileMini: `${375/16}rem`,
+      mobileSmall: `${490/16}rem`,
+      mobileMid: `${540/16}rem`,
+      mobile: `${576/16}rem`,
       tablet: `${786/16}rem`,
       deskMini: `${976/16}rem`,
       deskMid: `${1129/16}rem`
@@ -52,6 +55,7 @@ const theme ={
     },
     button:{
       padding:'0.625rem 1.5rem',
+      mobilePad:'0.625rem 0.8rem',
       radius:'0.3125rem',
       shadow:'0 8px 8px -4px #4a5ecf20'
     },

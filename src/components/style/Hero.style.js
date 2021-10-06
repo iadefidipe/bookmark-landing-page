@@ -31,49 +31,54 @@ export const StyledHero = styled.section`
 
     
 @media (max-width: ${ ({theme}) => theme.queries.deskMid}){
-    flex-direction: column-reverse;
-    background-position: ${ ({feature}) => feature ? 'left bottom' : 'right 170px'} ;
+    flex-direction: ${ ({feature}) => feature ? 'column' : 'column-reverse'};
+    background-position: ${ ({feature}) => feature ? 'left 100px' : 'right 170px'} ;
     text-align:center;
 
 
 }
 @media (max-width: ${ ({theme}) => theme.queries.tablet}){
-    background-size: auto;
+    background-size: 500px  ;
+
     padding: 50px 32px 100px;
-    background-position: ${ ({feature}) => feature ? 'left bottom' : 'right 110px'} ;
+    background-position: ${ ({feature}) => feature ? 'left 180px' : 'right 110px'} ;
 
 }
 @media (max-width: ${ ({theme}) => theme.queries.mobile}){
     background-size: 350px ;
-    
 
-    background-position:  ${ ({feature}) => feature ? 'left 500px' : 'right 90px'} ;
+
+    background-position:  ${ ({feature}) => feature ? 'left 220px' : 'right 100px'} ;
 
 }
+@media (max-width: ${ ({theme}) => theme.queries.mobileMid}){
+    background-size: 300px ;
+
+    background-position:  ${ ({feature}) => feature ? 'left 220px' : 'right 100px'} ;
+}
+@media (max-width: ${ ({theme}) => theme.queries.mobileSmall}){
+    background-size: 250px;
+
+    background-position:  ${ ({feature}) => feature ? 'left 180px' : 'right 100px'} ;
+}
+
 @media (max-width: ${ ({theme}) => theme.queries.mobileMini}){
     background-size: 200px  ;
-
-
-
+    background-position:  ${ ({feature}) => feature ? 'left 180px' : 'right 100px'} ;
+}
+@media (max-width: ${ ({theme}) => theme.queries.mobileMin}){
+ 
+    background-position:  ${ ({feature}) => feature ? 'left 140px' : 'right 100px'} ;
 }
 
 
 `
 export const HeroLeft = styled.div`
-
-
+    margin-top:  ${ ({feature}) => feature ? '100px' : 'none'} ;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
-    &>h1{
-        /* margin-bottom: 24px; */
-        /* width: 95%; */
-    }
-
-    &>p{
-        /* margin-bottom: 32px; */
-    }
 
 `
 
@@ -92,13 +97,7 @@ export const HeroCta= styled.div`
 
 `
 export const HeroImage= styled.img`
-    /* width: 579px;
-    height: 386px; */
-
-    /* @media (max-width: ${ ({theme}) => theme.queries.mobile}) {
-        width: 208px;
-        height: 312px;
-    } */
+    
 
 `
 
