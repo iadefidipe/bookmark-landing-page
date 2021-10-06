@@ -5,7 +5,7 @@ const Menu = ({header,column,border,gap}) => {
     return (
     
         <MenuStyle column ={column} border={border}>
-            {menuData.map( (data) => ( <MenuText header={header} key={data.id} border={border}> {data.title}  </MenuText> ))}
+            {menuData.map( (data) => ( <MenuText header={header} key={data.id} border={border} to={data.link} > <p>{data.title} </p>  </MenuText> ))}
 
         </MenuStyle>
             

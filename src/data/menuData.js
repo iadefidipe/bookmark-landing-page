@@ -35,6 +35,6 @@ export const socialData = [
     id: 2,
     title: "twitter",
     image: twitter,
-    link: "/facebook",
+    link: "/twitter",
   },
 ];

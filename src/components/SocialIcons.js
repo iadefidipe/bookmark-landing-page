@@ -1,11 +1,14 @@
-import { IconStyle  } from "./style/Social.style"
-import theme from '../data/theme';
+import { IconStyle,Icon } from "./style/Social.style"
+import {socialData} from "../data/menuData"
 
 const SocialIcons = () => {
     return (
         <IconStyle>
-            <img src={ theme.icon.facebook }alt="" />
-            <img src={ theme.icon.twitter } alt="" />
+            { socialData.map( (social) => (
+                <Icon to ={social.link} >
+                    <img src={social.image} alt="" />
+                </Icon> 
+            )  ) }
         </IconStyle>
     )
 }
