@@ -2,7 +2,7 @@ import Menu from "./Menu"
 import SocialIcons from "./SocialIcons"
 import { Container } from "./style/container.style"
 import { Footerdiv, StyledFooter } from "./style/Footer.style"
-import { Logo } from "./style/Logo.style"
+import Logo from "./Logo"
 
 
 const Footer = ({theme}) => {

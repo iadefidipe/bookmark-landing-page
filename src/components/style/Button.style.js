@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const Button = styled.button`
+    
     padding: ${({theme}) => theme.button.padding };
     border-radius: ${({theme}) => theme.button.radius};
     border:  ${({mobile}) =>  `2px solid ${ mobile ? 'white':'transparent' }` } ;

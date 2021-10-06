@@ -1,9 +1,8 @@
 import { Dropdown,Flex, Option,Social} from "./style/Dropdown.style"
 import Menu from "./Menu"
 import SocialIcons from "./SocialIcons"
-import { Logo } from "./style/Logo.style"
+import Logo from "./Logo"
 import BtnHamburger from "./BtnHamburger"
-
 import { Button } from "./style/Button.style"
 
 const MobileMenu = ({theme, toggle}) => {
@@ -12,7 +11,7 @@ const MobileMenu = ({theme, toggle}) => {
         <Dropdown>
 
             <Flex>
-
+            
                 <Logo src={theme.logo.drop} />
                 <BtnHamburger hamburger={theme.hamburger.close} toggle={toggle} />
 
