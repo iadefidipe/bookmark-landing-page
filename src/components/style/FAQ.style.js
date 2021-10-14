@@ -5,10 +5,13 @@ export const StyledFAQ = styled.section`
 
 `
 export const FAQContainer = styled.div`
-margin: 0 auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
+    
+
     
     width: 50%;
     padding: 20px;
@@ -38,7 +41,11 @@ margin: 0 auto;
     }
 
     @media (max-width: ${ ({theme}) => theme.queries.deskMini}){
-        min-width: 313px ;
+        width: 70% ;
+
+    }
+    @media (max-width: ${ ({theme}) => theme.queries.mobileMini}){
+        width: 100% ;
 
     }
     
@@ -49,10 +56,12 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 10px 0;
+gap: 20px;
 `
 
 export const MainContainer = styled.div`
     margin-top: 50px; 
+    
 `
 
 export const ButtonContainer = styled.div`

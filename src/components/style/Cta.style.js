@@ -23,6 +23,17 @@ export const StyledCta = styled.section`
     
 `
 
+export const InputDiv = styled.div`
+
+`
+export const EmailError = styled.p`
+    background-color: ${({theme}) => theme.colors.pryRed } ;
+    text-align: center;
+    font-size: 14px;
+    color: ${({theme}) => theme.colors.neuWhite };
+
+`
+
 export const CtaForm = styled.form`
 
      display:flex;
@@ -41,6 +52,8 @@ export const FormInput = styled.input`
     border-radius: 5px;
     padding: 10px  0 10px 20px;
     width: 300px;
+    outline:  ${({theme,error}) => !error && ` 2px solid ${theme.colors.pryRed}`  } ;
+
 
     &::placeholder{
         color: ${({ theme }) => theme.colors.neuBlue} ;

@@ -20,6 +20,7 @@ const FAQ = ({theme}) => {
             <SectionIntro header={theme.faqData.title} text = {theme.faqData.subtitle} />
 
             <MainContainer>
+                
                 {theme.faqData.faqs.map( (faq,index) => (
                     <FAQContainer key={index} onClick={ () => handleToggle(index)} >
                         <FAQuestion>
@@ -33,6 +34,7 @@ const FAQ = ({theme}) => {
 
                 
             </MainContainer>
+
             <ButtonContainer>
                 <Button bgcolor={theme.colors.pryBlue} color={theme.colors.white}> {theme.faqData.faqButton.text} </Button>
             </ButtonContainer>

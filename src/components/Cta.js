@@ -1,10 +1,44 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Button } from './style/Button.style'
 import { Container } from './style/container.style'
-import { CtaForm, FormInput, StyledCta } from './style/Cta.style'
+import { CtaForm, FormInput, StyledCta, InputDiv, EmailError } from './style/Cta.style'
 import { SectionHeader } from './style/SectionHeader'
+import { validEmail } from "../helpers/Config";
+
+
 
 const Cta = ({theme}) => {
+
+    const [input, setInput] = useState({});
+    const [error, setError] = useState(true);
+    const [email, setEmail] = useState("");
+  
+    const handleInputChange = (e) => {
+      const name = e.target.name;
+      const value = e.target.value;
+
+      
+      setInput({ [name]: value });
+    };
+  
+    const handleFormSubmit = (e) => {
+      e.preventDefault();
+
+    
+  
+      const emailValid = validEmail.test(
+          input.email
+      );
+      console.log(emailValid)
+  
+      if (!emailValid) {
+        setError(false);
+      } else {
+        setError(true);
+        setEmail(input);
+        document.getElementById("email").value = " ";
+      }
+    };
 
     const color = true
 
@@ -17,11 +51,16 @@ const Cta = ({theme}) => {
 
                     <SectionHeader color = {color} > {theme.ctaData.title} </SectionHeader>
 
-                    <CtaForm>
+                    <CtaForm onSubmit={handleFormSubmit} >
 
-                        <FormInput type="text" placeholder={theme.ctaData.placeholder} />
+                        <InputDiv>
+                            <FormInput name="email"id="email" placeholder={theme.ctaData.placeholder} error={error} email={email} onChange={handleInputChange} />
 
-                        <Button bgcolor={theme.colors.pryRed} color={theme.colors.white}>{theme.btnNav}</Button>
+                            {!error && <EmailError> {theme.ctaData.errorMessage} </EmailError> }
+                        </InputDiv>
+                        
+
+                        <div><Button bgcolor={theme.colors.pryRed} color={theme.colors.white}>{theme.btnNav}  </Button></div>
 
                     </CtaForm>
 

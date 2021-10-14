@@ -92,7 +92,8 @@ const theme ={
       title: 'Stay up-to-date with what we’re doing',
       text: '35,000+ ALREADY JOINED',
       btnText: 'Contact Us',
-      placeholder: 'Enter your email address'
+      placeholder: 'Enter your email address',
+      errorMessage: "Whoops, make sure it's an email!"
     },
     downloadData:{
       title: 'Download the extension',
