@@ -33,7 +33,7 @@ Users should be able to:
 ### Screenshot
 
 ![Full page shot](./screenshots/bookmar-src-1.png)
-![page shot](./screenshots/bookmar-src-2.png)
+![page shot](./screenshots/bookmark-src-2.png)
 
 ### Links
 
