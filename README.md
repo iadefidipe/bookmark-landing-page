@@ -65,6 +65,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Israel Adefidipe](https://iadefidipe.netlify.app/)
+- Linkedin - [Israel Adefidipe](https://www.linkedin.com/in/iadefidipe/)
 - Frontend Mentor - [@iadefidipe](https://www.frontendmentor.io/profile/iadefidipe)
 - Twitter - [@iadefidipe](https://www.twitter.com/iadefidipe)
